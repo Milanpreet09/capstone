@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA APOD</title>
+    <title>Project Portfolio and APOD</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Astronomy Picture of the Day</h1>
-        <form id="date-form">
-            <label for="date-input">Enter a Date (YYYY-MM-DD):</label>
-            <input type="date" id="date-input" required>
-            <button type="submit">Get Picture</button>
-        </form>
-        <div id="picture-container"></div>
-        <h2>Favourites</h2>
-        <div id="favourites-container"></div>
-    </div>
+    <header>
+        <h1>WEB DEVELOPMENT III</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#apod">Astronomy Picture of the Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Welcome to My Project Page</h2>
+            <p>Here, you can explore some of the exciting projects I've been working on. Feel free to navigate through the links above to learn more about each project.</p>
+            <section class="featured-projects">
+                <h2>Featured Projects</h2>
+                <div class="project-item">
+                    <h3>Astronomy Project</h3>
+                    <p>This project explores various aspects of astronomy, featuring interactive elements and educational content.</p>
+                    <a href="https://milanpreet09.github.io/capstone/" target="_blank">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Pokedex App</h3>
+                    <p>An engaging web application that displays information about Pokémon using the PokeApi. Users can view details, load more Pokémon, and track caught Pokémon.</p>
+                    <a href="https://milanpreet09.github.io/pokedex/index.html" target="_blank">View Project</a>
+                </div>
+            </section>
+        </section>
+
+        <!-- APOD Section -->
+        <section id="apod">
+            <h2>Astronomy Picture of the Day</h2>
+            <form id="date-form">
+                <label for="date-input">Enter a Date (YYYY-MM-DD):</label>
+                <input type="date" id="date-input" required>
+                <button type="submit">Get Picture</button>
+            </form>
+            <div id="picture-container"></div>
+            <h2>Favourites</h2>
+            <div id="favourites-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Milanpreet. All rights reserved.</p>
+        <p>Contact: <a href="mailto:Milanpreet@example.com">Milanpreet@example.com</a> | Phone: +91-123-456-7890</p>
+        <p>
+            <a href="https://www.linkedin.com/in/prabhjot-kaur" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
